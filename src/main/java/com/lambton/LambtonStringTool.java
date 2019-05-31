@@ -24,9 +24,9 @@ public class LambtonStringTool
 
             for (int i =s.length()-1; i >=0; i--)
             {
-                int b = s.charAt(i);
+                int b = (int)(s.charAt(i));
                 int j = i+1;
-                if(b=='0'||b=='1')
+                if(b==0||b==1)
                 {
                     n = (int) (n + b*(Math.pow(2, j)));
 
@@ -83,6 +83,7 @@ public class LambtonStringTool
 
         return(replacedString);
     }
+
 
 
 
