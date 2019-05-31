@@ -37,6 +37,36 @@ public class LambtonStringTool
 
             return(n);
         }
-        
+
+    static public String initials(String s)
+    {
+        String tempS ;
+        return null;
+
+    }
+
+    static public char mostFrequent(String s)
+    {
+        int maxCount = 0;
+        char maxChar = '\0';
+        for (int i = s.length()-1; i >= 0; i--) {
+            int count = -1;
+            char c = s.charAt(i);
+
+            for (int j = s.length() - 1; j >= 0; j--) {
+                if (c == s.charAt(j)) {
+                    count++;
+                }
+            }
+
+            if (count > maxCount) {
+                maxCount = count;
+                maxChar = c;
+
+            }
+        }
+        return(maxChar);
+
+    }
 
 }
