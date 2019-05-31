@@ -26,7 +26,7 @@ public class LambtonStringTool
             {
                 int b = (int)(s.charAt(i));
                 int j = i+1;
-                if(b==0||b==1)
+                if(b == 0 || b == 1)
                 {
                     n = (int) (n + b*(Math.pow(2, j)));
 
