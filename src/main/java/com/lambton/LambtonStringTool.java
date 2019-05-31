@@ -72,12 +72,16 @@ public class LambtonStringTool
 
     }
 
-    public replaceSubString(String s1, String s2, String s3)
+    public String replaceSubString(String s1, String s2, String s3)
     {
+        String replacedString = "";
         if(s1.contains(s2))
         {
-            
+            replacedString = s1.replaceAll(s2, s3);
         }
+        else System.out.println("It doesn't have the substring");
+
+        return(replacedString);
     }
 
 
