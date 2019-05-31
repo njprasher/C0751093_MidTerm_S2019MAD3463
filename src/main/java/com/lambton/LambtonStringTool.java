@@ -19,7 +19,8 @@ public class LambtonStringTool
 
     static public int binaryToDecimal(String s)
         {
-            int n=0;
+            int n = 0;
+
 
             for (int i =s.length()-1; i >=0; i--)
             {
@@ -28,7 +29,9 @@ public class LambtonStringTool
                 if(b=='0'||b=='1')
                 {
                     n = (int) (n + b*(Math.pow(2, j)));
+
                 }
+
                 else {
                     System.out.println("Number is not Binary");
                     break;
@@ -68,5 +71,15 @@ public class LambtonStringTool
         return(maxChar);
 
     }
+
+    public replaceSubString(String s1, String s2, String s3)
+    {
+        if(s1.contains(s2))
+        {
+            
+        }
+    }
+
+
 
 }
