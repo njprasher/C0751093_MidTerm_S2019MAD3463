@@ -25,16 +25,18 @@ public class LambtonStringTool
             for (int i =s.length()-1; i >=0; i--)
             {
                 int b = (int)(s.charAt(i));
-                int j = i+1;
-                if(b == 0 || b == 1)
+
+                for (int j = 0; j < s.length(); j++)
                 {
-                    n = (int) (n + b*(Math.pow(2, j)));
+                    if(b == 0 || b == 1)
+                    {
+                        n = (int) (n + b*(Math.pow(2, j)));
 
-                }
+                    }
 
-                else {
-                    System.out.println("Number is not Binary");
-                    break;
+                    else {
+                        return 0;
+                    }
                 }
             }
 
