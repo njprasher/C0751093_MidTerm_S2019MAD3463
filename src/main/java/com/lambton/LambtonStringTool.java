@@ -24,7 +24,7 @@ public class LambtonStringTool
 
             for (int i =s.length()-1; i >=0; i--)
             {
-                int b = (int)(s.charAt(i));
+                int b = Character.getNumericValue(s.charAt(i));
 
                 for (int j = 0; j < s.length(); j++)
                 {
